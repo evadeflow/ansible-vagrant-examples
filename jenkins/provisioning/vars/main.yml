@@ -11,5 +11,14 @@ firewall_allowed_tcp_ports:
   - "8080"
 
 jenkins_plugins:
+  - build-timeout
+  - conditional-buildstep
+  - disk-usage
   - git
+  - greenballs
+  - mercurial
+  - parameterized-trigger
+  - scm-sync-configuration
+  - slack
+  - sonar
   - ssh

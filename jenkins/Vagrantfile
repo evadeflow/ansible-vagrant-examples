@@ -4,7 +4,8 @@
 VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  config.vm.box = "geerlingguy/centos7"
+  config.vm.box = "centos6"
+  config.vm.box_url = "file://../../../boxes/centos-6.6/builds/VirtualBox-centos66.box"
   config.ssh.insert_key = false
 
   config.vm.provider :virtualbox do |v|
