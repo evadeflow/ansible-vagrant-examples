@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hudson.plugins.scm__sync__configuration.ScmSyncConfigurationPlugin version="1">
+  <scm class="hudson.plugins.scm_sync_configuration.scms.ScmSyncGitSCM"/>
+  <scmRepositoryUrl>scm:git:git@bitbucket.org:evadeflow/mws-jenkins.git</scmRepositoryUrl>
+  <noUserCommitMessage>false</noUserCommitMessage>
+  <displayStatus>true</displayStatus>
+  <commitMessagePattern>[message]</commitMessagePattern>
+  <manualSynchronizationIncludes>
+    <include>users/*/config.xml</include>
+    <include>**/jobs/*/promotions/*/config.xml</include>
+    <include>jenkins.plugins.publish_over_ssh.BapSshPublisherPlugin.xml</include>
+    <include>org.jenkinsci.plugins.*.xml </include>
+    <include>log/*.xml</include>
+    <include>jenkins.model.JenkinsLocationConfiguration.xml</include>
+    <include>com.cloudbees*.xml</include>
+    <include>license.xml </include>
+    <include>nodeMonitors.xml</include>
+    <include>proxy.xml</include>
+    <include>ownership.xml</include>
+    <include>ru.yandex.jenkins.plugins.debuilder.*.xml</include>
+    <include>**/jobs/*/config.xml</include>
+    <include>email-templates/*</include>
+  </manualSynchronizationIncludes>
+</hudson.plugins.scm__sync__configuration.ScmSyncConfigurationPlugin>
